@@ -1,0 +1,42 @@
+:root{
+    --orange:#dc8901;
+    --preto:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:var(--preto);
+    font-family: 'Roboto Flex', sans-serif;    
+    color: white;
+}
+
+/*Cabeçalho*/
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .logo{
+    color: var(--orange);
+    font-size: 50px; 
+    font-family: 'Arial Black';
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--orange);
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+header nav li{
+    list-style: none;
+    display: inline-flex;
+}
