@@ -29,7 +29,7 @@ header .logo{
 .navbar-nav > li > a{
     text-decoration: none;
     margin-left: 20px;
-    color: #dc8901;
+    color: var(--orange);
     font-size: 20px;
 }
 
@@ -51,4 +51,16 @@ header nav li{
 
 
 /* Animes principais */
+.titulo{
+    color: var(--orange);
+    margin: 2%;
+    font-size: 50px;
+    font-family:'Koulen', cursive;
+}
+
+.box-anime{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
 
