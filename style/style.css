@@ -9,18 +9,15 @@
     box-sizing: border-box;
 }
 
-body{
-    background:var(--preto);
+.body{
+    background-color: var(--preto);
     font-family: 'Roboto Flex', sans-serif;    
-    color: white;
 }
 
 /*Cabeçalho*/
 
 header .container{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 header .logo{
@@ -29,14 +26,29 @@ header .logo{
     font-family: 'Arial Black';
 }
 
-header nav a{
+.navbar-nav > li > a{
     text-decoration: none;
-    color: var(--orange);
     margin-left: 20px;
+    color: #dc8901;
     font-size: 20px;
+}
+
+.navbar-nav > li > a:hover{
+    color: rgb(161, 105, 0);
 }
 
 header nav li{
     list-style: none;
     display: inline-flex;
 }
+
+
+/*slider principal*/
+
+.carousel-item img{
+    height: 80vh;
+}
+
+
+/* Animes principais */
+
