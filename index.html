@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="style/owl.theme.default.min.css">
 
     <!-- fontes usadas -->
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Flex:opsz,wght@8..144,300&display=swap"
+        rel="stylesheet">
+
     <title>ANIFLIX</title>
 </head>
 
@@ -30,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav justfy-content-left">
                         <li class="nav-item">
-                            <a class="nav-link active link" aria-current="page" href="#">Página Inicial</a>
+                            <a class="nav-link active link" aria-current="page" href="#MainSlider">Página Inicial</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link link" href="#animes">Animes</a>
@@ -51,18 +52,181 @@
                         <img src="img/anime-destaque 1.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>SPY X FAMILY</h5>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#modal-trailer"><i class="fas fa-play"></i>ASSISTIR AGORA</button>
+                            <!--Modal Trailer-->
+                            <div class="modal fade" id="modal-trailer" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-trailer"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                                aria-label="Close" onclick=stopVideo()></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe id="video" width="1020" height="720"
+                                                src="https://www.youtube.com/embed/0CJr6AfE2rY"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#modal-sinopse"><i class="fas fa-info"></i>MAIS INFORMAÇÕES</button>
+                                <!-- modal sinopse -->
+                                <div class="modal fade" id="modal-sinopse" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-sinopse"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Sinopse</h5>
+                                            <div class="estrelas">
+                                                <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                                                <label for="cm_star-1"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                                                <label for="cm_star-2"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                                                <label for="cm_star-3"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                                                <label for="cm_star-4"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                                                <label for="cm_star-5"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                                            </div>
+                                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>O habilidoso espião “Twilight” é instruído a construir uma “família” para se infiltrar em uma tradicional instituição de ensino. Mas a “filha” que ele encontra é uma paranormal que lê mentes! E a “esposa” é uma assassina?!
+                                            Ocultando um do outro suas identidades, essa família temporária terá de enfrentar os perigos dos exames de admissão e do mundo em uma espirituosa comédia doméstica!!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!--Carousel-->
                     <div class="carousel-item">
                         <img src="img/anime-destaque 2.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>KOE NO KATACHI</h5>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#modal-trailer1"><i class="fas fa-play"></i>ASSISTIR AGORA</button>
+                            <!--Modal Trailer-->
+                            <div class="modal fade" id="modal-trailer1" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-trailer1"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                                aria-label="Close" onclick=stopVideo2()></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe id="video2" width="1020" height="720"
+                                                src="https://www.youtube.com/embed/nfK6UgLra7g"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#modal-sinopse1"><i class="fas fa-info"></i>MAIS INFORMAÇÕES</button>
+                                <!-- modal sinopse -->
+                                <div class="modal fade" id="modal-sinopse1" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-sinopse1"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Sinopse</h5>
+                                            <div class="estrelas">
+                                                <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                                                <label for="cm_star-1"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                                                <label for="cm_star-2"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                                                <label for="cm_star-3"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                                                <label for="cm_star-4"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                                                <label for="cm_star-5"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                                            </div>
+                                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Uma estudante com problemas de audição sofre com o bullying dos colegas e decide mudar de escola. Anos mais tarde, um dos rapazes que a importunavam resolve se redimir.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!--Carousel-->
                     <div class="carousel-item">
                         <img src="img/anime-destaque 3.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>TOKYO GHOUL</h5>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#modal-trailer2"><i class="fas fa-play"></i>ASSISTIR AGORA</button>
+                            <!--Modal Trailer-->
+                            <div class="modal fade" id="modal-trailer2" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-trailer2"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                                aria-label="Close" onclick=stopVideo3()></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe id="video3" width="1020" height="720"
+                                                src="https://www.youtube.com/embed/vGuQeQsoRgU"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#modal-sinopse2"><i class="fas fa-info"></i>MAIS INFORMAÇÕES</button>
+                                <div class="modal fade" id="modal-sinopse2" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-sinopse2"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content bg-black">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Sinopse</h5>
+                                            <div class="estrelas">
+                                                <input type="radio" id="cm_star-empty" name="fb" value="" checked/>
+                                                <label for="cm_star-1"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-1" name="fb" value="1"/>
+                                                <label for="cm_star-2"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-2" name="fb" value="2"/>
+                                                <label for="cm_star-3"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-3" name="fb" value="3"/>
+                                                <label for="cm_star-4"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-4" name="fb" value="4"/>
+                                                <label for="cm_star-5"><i class="fa"></i></label>
+                                                <input type="radio" id="cm_star-5" name="fb" value="5"/>
+                                            </div>
+                                            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Ken Kaneki tenta se proteger no Café Anteiku e se aproximar dos ghouls ao seu redor. Quando o Shu Tsukiyama decide saborear sua carne, porém, todo seu treinamento é posto à prova.</p>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -121,11 +285,11 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+    <script src="https://kit.fontawesome.com/d2811cd3dc.js" crossorigin="anonymous"></script>
     <!--owl-->
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
-
 </body>
 
 </html>

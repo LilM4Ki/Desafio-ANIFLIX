@@ -46,7 +46,28 @@ header nav li{
 /*slider principal*/
 
 .carousel-item img{
-    height: 80vh;
+    height: 80vh;   
+    opacity: 0.8;
+}
+
+.carousel-caption h5{
+    margin-bottom: 20px;
+} 
+
+.carousel-caption .btn{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.carousel-caption .btn:hover{
+    background-color: white;
+    color: black;
 }
 
 
@@ -58,9 +79,64 @@ header nav li{
     font-family:'Koulen', cursive;
 }
 
-.box-anime{
-    height: 100%;
-    width: 100%;
-    display: block;
+.btn i{
+    margin-right: 10px;
 }
 
+
+.modal-content iframe {
+    margin: 0 auto;
+    display: block;
+}
+.modal-title {
+    vertical-align: middle;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.modal-body p{
+    text-align: left;
+}
+
+.modal-title{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.estrelas input[type=radio] {
+    display: none;
+}
+.estrelas label i.fa{
+    font-size: 2.5em
+}
+.estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+}
+
+
+/* lista de animes */
+
+.owl-carousel{
+    overflow: hidden;
+    position: relative;
+}
+
+.box-anime{
+    max-width: 100%;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+    padding-left: 10px;
+}
+
+.box-anime:hover{
+	-moz-transform: scale(1.1);
+    opacity: 0.5;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    
+} 
