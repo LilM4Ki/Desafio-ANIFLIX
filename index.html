@@ -37,7 +37,7 @@
                             <a class="nav-link link" href="#animes">Animes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link" href="#">Calendario</a>
+                            <a class="nav-link link" href="#calendario">Calendário</a>
                         </li>
                     </ul>
                 </div>
@@ -199,6 +199,7 @@
                             </div>
                             <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
                                 data-bs-target="#modal-sinopse2"><i class="fas fa-info"></i>MAIS INFORMAÇÕES</button>
+                                <!-- modal sinopse -->
                                 <div class="modal fade" id="modal-sinopse2" data-bs-backdrop="static"
                                 data-bs-keyboard="false" tabindex="-1" aria-labelledby="modal-sinopse2"
                                 aria-hidden="true">
@@ -241,10 +242,11 @@
             </div>
         </div>
     </main>
-    <div class="container-fluid">
-        <h3 class="titulo">ANIMES</h3>
+    <!-- Carousel OWL  -->
+    <div class="container-fluid" id="animes">
+        <h3 class="titulo">animes</h3>
         <div class="carrousel-animes">
-            <div class="owl-carousel owl-theme" id="animes">
+            <div class="owl-carousel owl-theme">
                 <div class="item">
                     <img class="box-anime" src="img/anime1.jpg" alt="">
                 </div>
@@ -278,6 +280,51 @@
             </div>
         </div>
     </div>
+    <section class="calendario" id="calendario">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="titulo">calendario</h3>
+                </div>
+                <div class="col-md-12 calendario" id="filter-btn-box">
+                    <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+                    <button class="main-btn filter-btn" id="dom-btn">Domingo</button>
+                    <button class="main-btn filter-btn" id="seg-btn">Segunda</button>
+                    <button class="main-btn filter-btn" id="ter-btn">Terça</button>
+                    <button class="main-btn filter-btn" id="qua-btn">Quarta</button>
+                    <button class="main-btn filter-btn" id="qui-btn">Quinta</button>
+                    <button class="main-btn filter-btn" id="sex-btn">Sexta</button>
+                    <button class="main-btn filter-btn" id="sab-btn">Sábado</button>
+                </div>
+                <div id="box">
+                    <div class="calendario-box seg">
+                        <img src="img/anime1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="calendario-box seg">
+                        <img src="img/anime2.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="calendario-box ter">
+                        <img src="img/anime3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="calendario-box qua">
+                        <img src="img/anime4.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="calendario-box qui">
+                        <img src="img/anime5.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="calendario-box sex">
+                        <img src="img/anime6.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="calendario-box sab">
+                        <img src="img/anime7.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="calendario-box dom">
+                        <img src="img/anime8.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- bootstrap -->
@@ -289,7 +336,8 @@
     <!--owl-->
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
-    <script src="js/owl/setup.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/calendario.js"></script>
 </body>
 
 </html>

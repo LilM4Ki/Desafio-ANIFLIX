@@ -12,6 +12,7 @@
 .body{
     background-color: var(--preto);
     font-family: 'Roboto Flex', sans-serif;    
+    text-align: center;
 }
 
 /*Cabeçalho*/
@@ -77,6 +78,7 @@ header nav li{
     margin: 2%;
     font-size: 50px;
     font-family:'Koulen', cursive;
+    text-align: center;
 }
 
 .btn i{
@@ -89,7 +91,6 @@ header nav li{
     display: block;
 }
 .modal-title {
-    vertical-align: middle;
     padding-top: 20px;
     text-transform: uppercase;
 }
@@ -140,3 +141,47 @@ header nav li{
 	transform: scale(1.1);
     
 } 
+
+/* calendario */
+
+.filter-btn-box{
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.filter-btn {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: var(--orange);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s ease all;
+    border-radius: 10%;
+}
+
+.filter-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.filter-btn.active{
+    background-color: #F8F8FF;
+    color: #141414;
+}
+
+#box{
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.calendario-box img{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    margin-left: 50px;
+}
